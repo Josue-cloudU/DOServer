@@ -92,7 +92,7 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'pdemo002',
-            'USER': 'Josue',
+            'USER': 'josue',
             'PASSWORD': '123',
             'HOST': 'localhost',
             'PORT': '',
