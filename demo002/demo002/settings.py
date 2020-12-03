@@ -25,7 +25,7 @@ SECRET_KEY = 'w3crv(jxkk-xiaucz-1abw-yf_wj+iuzr&o77!wjo#lne3^d7f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['165.22.183.231']
 
 
 # Application definition
