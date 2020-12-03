@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}List Jugadores{% endblock title %}
+
+{% block content %}
+<table class="table table-striped">
+  <th>Jugador ID</th>
+  <th>Nombre</th>
+  <th>Edad</th>
+  <th>Posicion</th>
+  <th>Equipo</th>
+  <th></th>
+  <th>Actions</th>
+  <th></th>
+  {% for jugador in object_list %}
+  <tr>
+    <td>{{ jugador.id }}</td>
+    <td>{{ jugador.nombre }}</td>
+    <td>{{ jugador.edad }}</td>
+    <td>{{ jugador.pisicion }}</td>
+    <td>{{ jugador.equipo }}</td>
+    <td><a href="{% url 'NFLP:detailjugador' jugador.id %}"><button type="button" name="buttton" class="btn btn-success btn-circle"><i class="fas fa-save fa-sm"></button></a></td>
+    <td><a href="{% url 'NFLP:updatejugador' jugador.id %}"><button type="button" name="buttton" class="btn btn-warning btn-circle"><i class="fas fa-pen fa-sm"></button></a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock content %}

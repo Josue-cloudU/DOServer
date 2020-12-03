@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Articulos Publicados{% endblock title %}
+
+{% block content %}
+<h2>Articulos Publicados</h2>
+<table class="table table-striped">
+  <th>ID</th>
+  <th>CATEGORY</th>
+  <th>DESCRIPTION</th>
+  <th>STATUS</th>
+  <th>TIMESTAMP</th>
+    {% for obj in objs %}
+    <tr>
+      <td>{{ obj.id }}</td>
+      <td>{{ obj.category }}</td>
+      <td>{{ obj.description }}</td>
+      <td>{{ obj.status }}</td>
+      <td>{{ obj.timestamp }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

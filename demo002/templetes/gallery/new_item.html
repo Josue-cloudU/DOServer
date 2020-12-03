@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}New Item{% endblock title %}
+
+{% block content %}
+  {{ description }}
+  <form class="" action="" method="post">
+    {% csrf_token %}
+      {{form}}
+    <button type="submit" name="enviar">enviar</button>
+
+  </form>
+{% endblock content %}

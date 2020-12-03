@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Update Equipo{% endblock title %}
+
+{% block content %}
+  <form class="" action="" method="post">
+    {% csrf_token %}
+      {{ form }}
+      <button type="submit" name="new"><i class="fas fa-save fa-sm"></i></button>
+      <a href="{% url 'NFLP:listequipo' %}" class="btn btn-link">Back</a>
+  </form>
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Articulos Publicados{% endblock title %}
+
+{% block content %}
+<h2>List of Contributors</h2>
+<table class="table table-striped">
+  <th>ID</th>
+  <th>Contributor</th>
+  <th>EMAIL</th>
+    {% for obj in objs %}
+    <tr>
+      <td>{{ obj.id }}</td>
+      <td>{{ obj.username }}</td>
+      <td>{{ obj.email }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

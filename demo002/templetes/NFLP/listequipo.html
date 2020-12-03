@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}List Equipo{% endblock title %}
+
+{% block content %}
+<table class="table table-striped">
+  <th>Equipo ID</th>
+  <th>Nombre</th>
+  <th>Division</th>
+  <th>Estadio</th>
+  <th></th>
+  <th>Actions</th>
+  <th></th>
+  {% for equipo in object_list %}
+  <tr>
+    <td>{{ equipo.id }}</td>
+    <td>{{ equipo.nombre }}</td>
+    <td>{{ equipo.division }}</td>
+    <td>{{ equipo.estadio }}</td>
+    <td><a href="{% url 'NFLP:detailequipo' equipo.id %}"><button type="button" name="buttton" class="btn btn-success btn-circle"><i class="fas fa-save fa-sm"></button></a></td>
+    <td><a href="{% url 'NFLP:updateequipo' equipo.id %}"><button type="button" name="buttton" class="btn btn-warning btn-circle"><i class="fas fa-pen fa-sm"></button></a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock content %}

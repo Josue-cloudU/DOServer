@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Detail Jugador{% endblock title %}
+
+{% block content %}
+
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">{{ object.nombre }}</h6>
+    </div>
+    <div class="card-body">
+      Jugador ID: {{ object.id }}
+      <br>
+      Edad: {{ object.edad }}
+      <br>
+      Posicion: {{ object.pisicion }}
+      <br>
+      Equipo: <h6>{{ object.equipo }}</h6>
+      <br>
+      <a href="{% url 'NFLP:listjugadores' %}" class="btn btn-link">Back</a>
+    </div>
+  </div>
+
+{% endblock content %}
