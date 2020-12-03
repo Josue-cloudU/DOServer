@@ -90,10 +90,10 @@ if DEBUG:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'pdemo002',
             'USER': 'Josue',
-            'PASSWORD': 123,
+            'PASSWORD': '123',
             'HOST': 'localhost',
             'PORT': '',
         }
