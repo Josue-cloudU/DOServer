@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #my apps
     'NFLP',
     'gallery',
     'savings',
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'demo002.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["templetes"],
+        'DIRS': [os.path.join(BASE_DIR, 'templetes')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
