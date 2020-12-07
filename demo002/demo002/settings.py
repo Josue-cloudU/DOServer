@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'w3crv(jxkk-xiaucz-1abw-yf_wj+iuzr&o77!wjo#lne3^d7f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['165.22.183.231']
 
@@ -77,18 +77,18 @@ WSGI_APPLICATION = 'demo002.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'db_demo001',
-            'USER': 'user1',
-            'PASSWORD': '123',
-            'HOST': '127.0.0.1',
-            'PORT': '5432',
-        }
-    }
-else:
+#if DEBUG:
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.postgresql',
+#            'NAME': 'db_demo001',
+#            'USER': 'user1',
+#            'PASSWORD': '123',
+#            'HOST': '127.0.0.1',
+#            'PORT': '5432',
+#        }
+#    }
+#else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
