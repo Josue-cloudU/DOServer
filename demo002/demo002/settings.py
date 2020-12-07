@@ -89,16 +89,16 @@ WSGI_APPLICATION = 'demo002.wsgi.application'
 #        }
 #    }
 #else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'pdemo002',
-            'USER': 'josue',
-            'PASSWORD': '123',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pdemo002',
+        'USER': 'josue',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
+}
 
 
 # Password validation
